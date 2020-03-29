@@ -1,25 +1,15 @@
-## Landing Page Animation
+## Effort Management App (EMA)
 
-Create smooth and beautiful landing page animation using only basic CSS animations.
+The effort management app of the state government will be having the repository of tracked citizens and will sub allocate management roles to concerned districts and concerned CHC (usually 9-10 within districts) and PHC (usually 9-10 under 1 CHC). This sub-allotment will be done based on GIS mapping of their administrative units that will be available as a GIS layer. Each PHC will have a set of medical officers that will get cases distributed among them based on phone numbers taken from their HR directory. The concerned Medical Officer (MO) will get a calendar of visits generated for him to visit QC (Quarantined Citizens) and fill a checklist of Home quarantine guidelines along with pictures.
+The district and state dashboards should be able to see diagnostics on following and raise alerts for MOs for appropriate cases:
 
-[![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
-
-## Example
-![](animation.gif)
-### LIVE DEMO: https://kvaibhav01.github.io/Landing-Page-Animation/
-
-## How-to?
-
-If you know basic CSS along with its animations you can quickly add this type of _landing page_ animation in your [SVG](https://www.w3schools.com/html/html5_svg.asp) files as shown in the demo. I recommend you to take the [W3School's tutorial](https://www.w3schools.com/css/css3_animations.asp) on the same. 
-
-In your CSS file, you need to have the following:
-
-- **[`animation`](https://www.w3schools.com/cssref/css3_pr_animation.asp)**: assign a keyframe animation name as `monitorIn`, duration of `1s`, animation type of `ease-in-out` and animation direction as `forwards`. 
-- **[`@keyframes`](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp) `monitorIn`**: next, use the `keyframe` rule of `from` `to` in order to [`transform`](https://www.w3schools.com/cssref/css3_pr_transform.asp) and define [`translation`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate) along Y-axis only setting the `opacity` accordingly.
-- **`@keyframes chatblips`**: for the `chatblips` keyframe, I've used the `bounce-in` [animation sample](http://angrytools.com/css/animation/) taken from [Angry Tools](http://angrytools.com) website. This uses the CSS [`scale()`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale) function to resize the element on 2D plane.
-
-#### That's it! Simple, clean and smooth! 
-
-## I've written a supporting blog post on  [Codeburst](https://codeburst.io/) publication on [Medium](https://medium.com/). 
-
-You can read the complete post and hit a clap or two [here](https://codeburst.io/create-a-beautiful-landing-page-animation-with-css-8f4501c20c8e)!
+1.Quarantine citizens who have not activated app.
+2.Quarantine citizens who have turned off GPS.
+3.Quarantine citizens who have not sent day’s photos.
+4.Quarantine citizens who have raised alarm.
+5.Quarantine citizens who have gone outside a predetermined radius (2 kms).
+6.Quarantine citizens movement map in last 14 days.
+7.Quarantine citizens visited by administration (number of visits)
+8.Quarantine citizens medically tested and quarantined.
+9.Quality of quarantine citizens for each Quarantine in last 24, 72 and lifetime
+The tracking should end automatically after a present N days. Each Quarantine citizens tracks should be stored and once any suspected case becomes an actual case, the path history of said person should feed into the general app for backtracking.
